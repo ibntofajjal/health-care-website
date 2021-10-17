@@ -1,5 +1,6 @@
 .services {
   color: #313f63;
+  margin-bottom: 10rem;
 }
 .services .text-area {
   text-align: center;
@@ -10,4 +11,62 @@
 }
 .services .text-area h5 {
   color: #313f638c;
+}
+.services-area .row .cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 20px !important;
+
+  margin-right: auto;
+  margin-left: auto;
+  /* background-color: aliceblue; */
+  text-align: center;
+}
+.services-area .row .cards .services-card {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+.services-area .row .cards .services-card p {
+  padding-top: 13px;
+  font-weight: 500;
+}
+.services-card button {
+  display: none;
+  font-size: 12px;
+  padding: 5px 8px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.services-card:hover button {
+  display: block;
+}
+.special-btn {
+  color: aliceblue;
+  background-color: #313f63;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+.align-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Making This Page Responsive */
+@media only screen and (max-width: 688px) {
+  .services-area .row .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services .text-area h3 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .services .text-area h5 {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 0 20px;
+  }
 }
