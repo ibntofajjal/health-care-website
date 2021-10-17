@@ -6,6 +6,7 @@ import Psychiatry from "../../../../img/health-3.png";
 import Urology from "../../../../img/health-4.png";
 import Dermatology from "../../../../img/health-5.png";
 import Infectous from "../../../../img/health-6.png";
+import ExtraSection from "../../../Home/ExtraSection/ExtraSection";
 
 const Services = () => {
   return (
@@ -69,6 +70,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <ExtraSection></ExtraSection>
     </div>
   );
 };

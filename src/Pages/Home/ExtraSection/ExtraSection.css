@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+.nearest-doctor-info {
+  padding: 0 40px;
+}
+
+.nearest-doctor-info h1 {
+  font-size: 40px;
+  color: #313f63;
+  font-weight: 700;
+}
+.nearest-doctor-info p {
+  color: #313f63ce;
+  padding: 30px 10px 30px 0;
+  font-size: 20px;
+}
+.site-promo img {
+  width: 1800px;
+}
+
+/* Making This Page Responsive */
+@media only screen and (max-width: 688px) {
+  .flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .site-promo img {
+    width: 100%;
+  }
+}
