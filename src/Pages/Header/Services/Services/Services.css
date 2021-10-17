@@ -1,0 +1,13 @@
+.services {
+  color: #313f63;
+}
+.services .text-area {
+  text-align: center;
+}
+.services .text-area h3 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.services .text-area h5 {
+  color: #313f638c;
+}

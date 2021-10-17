@@ -1,0 +1,27 @@
+.nav-item {
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-item a:hover {
+  background-color: #9693ff;
+  color: white !important;
+  border-radius: 3px;
+}
+.my-nav {
+  background-color: rgb(240, 251, 255);
+}
+.navs {
+  margin-left: auto;
+  margin-right: 80px;
+}
+.btn-outline {
+  border: 2px solid rgb(128, 204, 179);
+  padding: 5px 25px;
+  border-radius: 25px;
+}
+.btn-fill {
+  background-color: rgb(199, 30, 64);
+  padding: 6px 25px;
+  border-radius: 25px;
+  color: white;
+}

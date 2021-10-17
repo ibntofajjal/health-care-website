@@ -1,0 +1,88 @@
+.banner {
+  background: rgb(207, 213, 255);
+  background: linear-gradient(
+    347deg,
+    rgba(207, 213, 255, 1) 0%,
+    rgba(207, 238, 255, 1) 100%
+  );
+  height: 100vh;
+}
+
+.text-field {
+  text-align: center;
+  margin-top: 10%;
+  color: #313f63;
+}
+
+.text-field h1 {
+  font-size: 65px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 800;
+}
+
+.text-field p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  padding-top: 3px;
+}
+
+.input-area {
+  background-color: white;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 30px;
+  border-radius: 50px;
+}
+.input-area input {
+  border: none;
+  outline: 1px solid rgba(220, 220, 220, 0.041);
+  padding: 2px 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+.card {
+  padding: 20px 10px 20px 30px;
+  border-radius: 10px;
+}
+.card:hover {
+  background-color: #9693ff;
+  color: White;
+}
+
+/* Making This Page Responsive */
+@media only screen and (max-width: 688px) {
+  .text-field {
+    margin-top: 30%;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 80%;
+    margin-top: 30px;
+  }
+  .input-area {
+    display: none;
+  }
+  .card {
+    padding: 15px;
+  }
+  .card h4 {
+    font-size: 12px;
+    background-color: #9693ff;
+    border-radius: 3px;
+    color: White;
+    padding: 5px;
+  }
+  .calling-demo img {
+    width: 100%;
+  }
+}
