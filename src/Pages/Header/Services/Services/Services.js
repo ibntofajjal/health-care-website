@@ -32,22 +32,30 @@ const Services = () => {
               <div className="services-card">
                 <img src={Baby} className="img-fluid" width="50" alt="" />
                 <p>Baby Health</p>
-                <button className="special-btn">Consult Now</button>
+                <Link to="/login" className="text-decoration-none ">
+                  <button className="special-btn">Consult Now</button>
+                </Link>
               </div>
               <div className="services-card">
                 <img src={Stomach} className="img-fluid" width="50" alt="" />
                 <p>Stomach</p>
-                <button className="special-btn">Consult Now</button>
+                <Link to="/login" className="text-decoration-none ">
+                  <button className="special-btn">Consult Now</button>
+                </Link>
               </div>
               <div className="services-card">
                 <img src={Psychiatry} className="img-fluid" width="50" alt="" />
                 <p>Psychiatry</p>
-                <button className="special-btn">Consult Now</button>
+                <Link to="/login" className="text-decoration-none ">
+                  <button className="special-btn">Consult Now</button>
+                </Link>
               </div>
               <div className="services-card">
                 <img src={Urology} className="img-fluid" width="50" alt="" />
                 <p>Urology</p>
-                <button className="special-btn">Consult Now</button>
+                <Link to="/login" className="text-decoration-none ">
+                  <button className="special-btn">Consult Now</button>
+                </Link>
               </div>
               <div className="services-card">
                 <img
@@ -57,12 +65,16 @@ const Services = () => {
                   alt=""
                 />
                 <p>Dermatology</p>
-                <button className="special-btn">Consult Now</button>
+                <Link to="/login" className="text-decoration-none ">
+                  <button className="special-btn">Consult Now</button>
+                </Link>
               </div>
               <div className="services-card">
                 <img src={Infectous} className="img-fluid" width="50" alt="" />
                 <p>Infectous Disease</p>
-                <button className="special-btn">Consult Now</button>
+                <Link to="/login" className="text-decoration-none ">
+                  <button className="special-btn">Consult Now</button>
+                </Link>
               </div>
             </div>
           </div>

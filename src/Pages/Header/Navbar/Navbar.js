@@ -53,8 +53,12 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="buttons ms-auto">
-              <button className="btn btn-outline me-3">Log In</button>
-              <button className="btn btn-fill">Sign up</button>
+              <Link to="/login">
+                <button className="btn btn-outline me-3">Log In</button>
+              </Link>
+              <Link to="/signup">
+                <button className="btn btn-fill">Sign up</button>
+              </Link>
             </div>
           </div>
         </div>

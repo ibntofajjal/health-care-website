@@ -5,6 +5,8 @@ import FindMedical from "./Pages/FindMedical/FindMedical/FindMedical";
 
 import Navbar from "./Pages/Header/Navbar/Navbar";
 import Home from "./Pages/Home/Home/Home";
+import Login from "./Pages/Login/Login/Login";
+import SignUp from "./Pages/Login/SignUp/SignUp";
 import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
@@ -24,6 +26,12 @@ function App() {
           </Route>
           <Route path="/medical">
             <FindMedical></FindMedical>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/signup">
+            <SignUp></SignUp>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

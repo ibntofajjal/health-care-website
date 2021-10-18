@@ -1,5 +1,6 @@
 import React from "react";
 import "./Doctor.css";
+import { BsFillCheckCircleFill } from "react-icons/bs";
 
 const Doctor = (props) => {
   const { name, fee, specialist, img } = props.doctor;
@@ -8,7 +9,13 @@ const Doctor = (props) => {
       <img src={img} className="img-fluid" width="500" alt="" />
       <div className="doctor-info">
         <p>
-          Name: <b>{name}</b>
+          Name:{" "}
+          <b>
+            {name}{" "}
+            <span className="text-warning">
+              <BsFillCheckCircleFill />
+            </span>
+          </b>
         </p>
         <p>
           Consultation Fee: <b> ${fee}</b>
