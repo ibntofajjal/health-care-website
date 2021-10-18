@@ -3,6 +3,9 @@ import "./Home.css";
 import CallingDemo from "../../../img/doc-0.png";
 import { BsFillGeoAltFill, BsSearch } from "react-icons/bs";
 import Services from "../../Header/Services/Services/Services";
+import ExtraSection from "../ExtraSection/ExtraSection";
+import BigFooter from "../../Footer/BigFooter/BigFooter";
+import MinFooter from "../../Footer/MinFooter/MinFooter";
 
 const Home = () => {
   return (
@@ -59,6 +62,9 @@ const Home = () => {
           <img src={CallingDemo} className="img-fluid" alt="" />
         </div>
         <Services></Services>
+        <ExtraSection></ExtraSection>
+        <BigFooter></BigFooter>
+        <MinFooter></MinFooter>
       </div>
     </>
   );

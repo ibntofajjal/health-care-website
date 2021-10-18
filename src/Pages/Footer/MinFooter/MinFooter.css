@@ -1,0 +1,16 @@
+.min-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightblue;
+}
+.footer-social {
+  display: flex;
+}
+.footer-social h1 {
+  font-size: 30px;
+  padding: 0 10px;
+  color: #313f63;
+}
+.footer-social h1:hover {
+  color: rgb(41, 133, 102);
+}

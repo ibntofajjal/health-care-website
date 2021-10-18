@@ -1,0 +1,27 @@
+.doctor-card {
+  background-color: #313f63;
+  color: rgb(238, 238, 238);
+  margin: 10px 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.doctor-card button {
+  background-color: aliceblue;
+  border: none;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+.doctor-card button:hover {
+  color: rgb(76, 0, 255);
+  background-color: rgb(245, 245, 245);
+}
+.doctor-info {
+  margin-top: 30px;
+}
+.doctor-info p {
+  background-color: #9693ff1f;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* Making This Page Responsive */

@@ -1,0 +1,37 @@
+.catagories {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  text-decoration: none;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.item {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.item h4 {
+  font-size: 35px;
+  color: #313f63;
+}
+.item li {
+  color: #313f63c9;
+}
+.item li:hover {
+  color: #0048ffe0;
+}
+/* Making This Page Responsive */
+@media only screen and (max-width: 688px) {
+  .catagories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .item h4 {
+    font-size: 25px;
+    color: #313f63;
+  }
+}

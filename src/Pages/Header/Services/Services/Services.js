@@ -6,20 +6,22 @@ import Psychiatry from "../../../../img/health-3.png";
 import Urology from "../../../../img/health-4.png";
 import Dermatology from "../../../../img/health-5.png";
 import Infectous from "../../../../img/health-6.png";
-import ExtraSection from "../../../Home/ExtraSection/ExtraSection";
+
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
     <div>
-      <div className="services container">
+      <div className="services container my-5">
         <div className="text-area">
+          <h5>≽――― ( S E R V I C E S ) ―――≼</h5>
           <h3>
             Consult Top Doctors Online For <br />
             Any Health Concern
           </h3>
           <h5>
             Private online consultations with verified doctors in all
-            specialists
+            specialists.
           </h5>
         </div>
 
@@ -66,11 +68,12 @@ const Services = () => {
           </div>
           {/* all specialist */}
           <div className="text-center">
-            <button className="special-btn my-5 ">See All Specialists</button>
+            <Link to="/doctors">
+              <button className="special-btn my-5 ">See All Specialists</button>
+            </Link>
           </div>
         </div>
       </div>
-      <ExtraSection></ExtraSection>
     </div>
   );
 };

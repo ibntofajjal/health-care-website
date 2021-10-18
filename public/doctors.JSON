@@ -1,0 +1,86 @@
+[
+  {
+    "name": "David Walker",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-1.png",
+    "fee": 70,
+    "specialist": "Cardiologist",
+    "key": 1
+  },
+  {
+    "name": "Wasim Udzu",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-2.png",
+    "fee": 90,
+    "specialist": "Gastroenterologist",
+    "key": 2
+  },
+  {
+    "name": "Shams Khan",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-3.png",
+    "fee": 50,
+    "specialist": "Ophthalmologist",
+    "key": 3
+  },
+  {
+    "name": "Khabib Bamsi",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-4.png",
+    "fee": 70,
+    "specialist": "Dentist",
+    "key": 4
+  },
+  {
+    "name": "Trek Naidu",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-5.png",
+    "fee": 60,
+    "specialist": "Psychologist",
+    "key": 5
+  },
+  {
+    "name": "Uyas Dc.",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-6.png",
+    "fee": 85,
+    "specialist": "Baby-Health",
+    "key": 6
+  },
+  {
+    "name": "Cruls Albert",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-7.png",
+    "fee": 65,
+    "specialist": "Urology",
+    "key": 7
+  },
+  {
+    "name": "Sawon MXC",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-8.png",
+    "fee": 50,
+    "specialist": "Psychologist",
+    "key": 8
+  },
+  {
+    "name": "Johnny S.",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-9.png",
+    "fee": 100,
+    "specialist": "Sexologist",
+    "key": 9
+  },
+  {
+    "name": "Kala Manik",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-10.png",
+    "fee": 45,
+    "specialist": "Cardiologist",
+    "key": 10
+  },
+  {
+    "name": "Xavier B.",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-11.png",
+    "fee": 90,
+    "specialist": "Psychologist",
+    "key": 11
+  },
+  {
+    "name": "Kala Shala",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/Doctors/doctor-12.png",
+    "fee": 45,
+    "specialist": "Cardiologist",
+    "key": 12
+  }
+]

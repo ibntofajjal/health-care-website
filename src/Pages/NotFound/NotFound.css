@@ -1,0 +1,25 @@
+.not-found {
+  text-align: center;
+  margin-top: 10%;
+}
+.not-found h1 {
+  font-size: 300px;
+  font-weight: 900;
+  color: rgb(3, 21, 36);
+}
+.not-found p {
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+
+/* Making This Page Responsive */
+@media only screen and (max-width: 688px) {
+  .not-found h1 {
+    font-size: 120px;
+    margin-top: 50%;
+  }
+  .not-found p {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+}
