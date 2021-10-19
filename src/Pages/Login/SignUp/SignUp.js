@@ -2,11 +2,20 @@ import React from "react";
 import "./SignUp.css";
 import SignUpImg from "../../../img/SignUp.png";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
 const SignUp = () => {
   const { signInUsingGoogle } = useAuth();
+  const location = useLocation();
+  const history = useHistory();
+  const redirectURL = location.state?.from || "/home";
+
+  const handleGoogleSignUp = () => {
+    signInUsingGoogle().then((result) => {
+      history.push(redirectURL);
+    });
+  };
   return (
     <div>
       <div className="container">
@@ -43,7 +52,7 @@ const SignUp = () => {
               <input type="submit" value="Login" />
             </form>
             <p className="text-center mt-2 text-warning">≽――― ( O R ) ―――≼</p>
-            <button onClick={signInUsingGoogle}>
+            <button onClick={handleGoogleSignUp}>
               Sign up with <FcGoogle />
             </button>
             <Link to="./login" className="haveAccount text-decoration-none">
