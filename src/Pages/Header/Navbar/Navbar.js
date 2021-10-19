@@ -2,8 +2,11 @@ import React from "react";
 import "./Navbar.css";
 import Logo from "../../../img/logo.png";
 import { Link } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 
 const Navbar = () => {
+  const { user, logOut } = useAuth();
+  console.log(user);
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top my-nav d-block">
@@ -52,13 +55,28 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
+            <i>
+              User: <b>{user?.displayName}</b>
+            </i>
             <div className="buttons ms-auto">
-              <Link to="/login">
-                <button className="btn btn-outline me-3">Log In</button>
-              </Link>
-              <Link to="/signup">
-                <button className="btn btn-fill">Sign up</button>
-              </Link>
+              {user?.email ? (
+                <button onClick={logOut} className="btn btn-primary me-3">
+                  LogOut
+                </button>
+              ) : (
+                <Link to="/login">
+                  <button className="btn btn-outline me-3">Log In</button>
+                </Link>
+              )}
+              {user?.email ? (
+                <Link to="/signup">
+                  <button className="btn btn-fill d-none">Sign up</button>
+                </Link>
+              ) : (
+                <Link to="/signup">
+                  <button className="btn btn-fill ">Sign up</button>
+                </Link>
+              )}
             </div>
           </div>
         </div>

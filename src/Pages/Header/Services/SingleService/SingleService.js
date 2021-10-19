@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./SingleService.css";
 
 const SingleService = (props) => {
-  const { name, img, des, fee } = props.service;
+  const { name, img, des, fee, key } = props.service;
   return (
     <div>
       <div className="service-card">
@@ -16,7 +16,7 @@ const SingleService = (props) => {
           Fee: <b>${fee}</b>
         </p>
 
-        <Link to="/login">
+        <Link to={`/consultation/${key}`}>
           <button className="consult-btn">Consult</button>
         </Link>
       </div>

@@ -3,8 +3,10 @@ import "./SignUp.css";
 import SignUpImg from "../../../img/SignUp.png";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 
 const SignUp = () => {
+  const { signInUsingGoogle } = useAuth();
   return (
     <div>
       <div className="container">
@@ -36,7 +38,7 @@ const SignUp = () => {
             <br />
             <input type="submit" value="Login" />
             <p className="text-center mt-2 text-warning">≽――― ( O R ) ―――≼</p>
-            <button>
+            <button onClick={signInUsingGoogle}>
               Sign up with <FcGoogle />
             </button>
             <Link to="./login" className="haveAccount text-decoration-none">
