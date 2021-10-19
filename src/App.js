@@ -7,6 +7,7 @@ import FindDoctors from "./Pages/FindDoctors/FindDoctors/FindDoctors";
 import Navbar from "./Pages/Header/Navbar/Navbar";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login/Login";
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import SignUp from "./Pages/Login/SignUp/SignUp";
 import NotFound from "./Pages/NotFound/NotFound";
 
@@ -35,9 +36,9 @@ function App() {
             <Route path="/signup">
               <SignUp></SignUp>
             </Route>
-            <Route path="/consultation/:serviceID">
+            <PrivateRoute path="/consultation/:serviceID">
               <Consultation></Consultation>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
