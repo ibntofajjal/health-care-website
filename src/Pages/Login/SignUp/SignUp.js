@@ -16,27 +16,32 @@ const SignUp = () => {
           </div>
           <div className="login-form">
             <h1 className="text-center text-light pb-3">SignUp</h1>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="your@mail.here"
-            />
-            <br />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="password here"
-            />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Confirm password here"
-            />
-            <br />
-            <input type="submit" value="Login" />
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your@mail.here"
+                required
+              />
+              <br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password here"
+                required
+              />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Confirm password here"
+                required
+              />
+              <br />
+              <input type="submit" value="Login" />
+            </form>
             <p className="text-center mt-2 text-warning">≽――― ( O R ) ―――≼</p>
             <button onClick={signInUsingGoogle}>
               Sign up with <FcGoogle />

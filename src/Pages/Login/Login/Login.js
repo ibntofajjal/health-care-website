@@ -2,11 +2,20 @@ import React from "react";
 import "./Login.css";
 import LoginImg from "../../../img/Login.png";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
   const { signInUsingGoogle } = useAuth();
+  const location = useLocation();
+  const history = useHistory();
+  const redirectURL = location.state?.from || "/home";
+
+  const handleGoogleLogIn = () => {
+    signInUsingGoogle().then((result) => {
+      history.push(redirectURL);
+    });
+  };
   return (
     <div>
       <div className="container">
@@ -16,23 +25,27 @@ const Login = () => {
           </div>
           <div className="login-form">
             <h1 className="text-center text-light pb-3">LogIn</h1>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="your@mail.here"
-            />
-            <br />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="password here"
-            />
-            <br />
-            <input type="submit" value="Login" />
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your@mail.here"
+                required
+              />
+              <br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password here"
+                required
+              />
+              <br />
+              <input type="submit" value="Login" />
+            </form>
             <p className="text-center mt-2 text-warning">≽――― ( O R ) ―――≼</p>
-            <button onClick={signInUsingGoogle}>
+            <button onClick={handleGoogleLogIn}>
               Login with <FcGoogle />
             </button>
             <Link to="./signup" className="haveAccount text-decoration-none">

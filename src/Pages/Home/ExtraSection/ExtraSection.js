@@ -5,6 +5,7 @@ import Doctor2 from "../../../img/doc-2.png";
 import Doctor3 from "../../../img/doc-3.png";
 import Doctor4 from "../../../img/doc-4.png";
 import getMembership from "../../../img/getMembership.png";
+import { Link } from "react-router-dom";
 
 const ExtraSection = () => {
   return (
@@ -21,7 +22,9 @@ const ExtraSection = () => {
               video consultation. <br /> It's very easy and simple process to
               booking
             </p>
-            <button className="special-btn">Find Doctor Now</button>
+            <Link to="/doctors">
+              <button className="special-btn">Find Doctor Now</button>
+            </Link>
           </div>
           <div></div>
         </div>
@@ -55,7 +58,9 @@ const ExtraSection = () => {
               Allow quick and easy search with speed booking. Evain Maintains
               History doctors visited" <br /> - guy Hawkins
             </p>
-            <button className="special-btn">Find Doctor Now</button>
+            <Link to="/doctors">
+              <button className="special-btn">Find Doctor Now</button>
+            </Link>
           </div>
         </div>
 
@@ -67,7 +72,9 @@ const ExtraSection = () => {
               Contultation website. Connect with doctors online, We available
               24/7,from the comfort of you home
             </p>
-            <button className="btn btn-fill">Sign in</button>
+            <Link to="/login">
+              <button className="btn btn-fill">Sign in</button>
+            </Link>
           </div>
           <div>
             <img src={Doctor4} className="img-fluid" alt="" />
