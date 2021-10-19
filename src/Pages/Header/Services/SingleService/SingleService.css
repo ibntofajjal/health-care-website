@@ -1,0 +1,37 @@
+.service-card {
+  margin-top: 3rem;
+  background-color: #d0d7ff;
+  padding: 10px 10px 20px 20px;
+  border-radius: 10px;
+}
+
+.service-card p {
+  font-size: 20px;
+}
+.service-card small {
+  padding-bottom: -20px;
+}
+.service-name {
+  margin-top: 10px;
+}
+.service-card img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.consult-btn {
+  border: none;
+  color: #ffffff;
+  background-color: rgb(40, 56, 80);
+  padding: 3px 15px;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 688px) {
+  .service-card p {
+    font-size: 14px;
+  }
+  .service-card small {
+    display: none;
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Baby Health",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/HealthCare/health-1.png",
+    "des": "Click on 'Consult' to get advice on Baby Health",
+    "fee": 70,
+    "key": 1
+  },
+  {
+    "name": "Stomach",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/HealthCare/health-2.png",
+    "des": "Click on 'Consult' to solve the problem caused by stomach",
+    "fee": 90,
+    "key": 2
+  },
+  {
+    "name": "Psychiatry",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/HealthCare/health-3.png",
+    "des": "Get solutions to psychological problems from expert doctors.",
+    "fee": 50,
+    "key": 3
+  },
+  {
+    "name": "Urology",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/HealthCare/health-4.png",
+    "des": "Get solutions to urology problems from expert doctors",
+    "fee": 70,
+    "key": 4
+  },
+  {
+    "name": "Dermatology",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/HealthCare/health-5.png",
+    "des": "Get dermatological solutions from dermatologists",
+    "fee": 60,
+    "key": 5
+  },
+  {
+    "name": "Infectious Disease",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/HealthCare/health-6.png",
+    "des": "Learn about infectious diseases and seek advice",
+    "fee": 85,
+    "key": 6
+  }
+]

@@ -1,0 +1,19 @@
+.about-section {
+  margin-top: 5rem;
+}
+.about-content {
+  background-color: #363976;
+  color: white;
+}
+.about-content p {
+  font-size: 20px;
+  padding: 60px;
+}
+
+/* Responsive this page for mobile device */
+@media only screen and (max-width: 688px) {
+  .about-content p {
+    font-size: 15px;
+    padding: 30px;
+  }
+}

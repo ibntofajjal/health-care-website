@@ -8,9 +8,9 @@ const Navbar = () => {
     <div>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top my-nav d-block">
         <div class="container">
-          <a class="navbar-brand" href="#home">
+          <Link to="/home" class="navbar-brand">
             <img src={Logo} alt="" width="200" />
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -46,9 +46,9 @@ const Navbar = () => {
                 <Link
                   class="nav-link active text-dark"
                   aria-current="page"
-                  to="/medical"
+                  to="/about"
                 >
-                  Find Medical
+                  About US
                 </Link>
               </li>
             </ul>
