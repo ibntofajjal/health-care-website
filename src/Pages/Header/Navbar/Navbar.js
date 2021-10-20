@@ -54,8 +54,9 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
+            <img src={user?.photoURL} className="userImg" width="50" alt="" />
             <i>
-              User: <b>{user?.displayName}</b>
+              <b>{user?.displayName}</b>
             </i>
             <div className="buttons ms-auto">
               {user?.email ? (
